@@ -101,8 +101,8 @@ function draw(){
     spawn_obstacle();
 
     if(obstacle_group.isTouching(trex)){
-      //gameState = "end";
-      //die.play()
+      gameState = "end";
+      die.play()
       trex.velocityY = -10;
       jump.play();
 
